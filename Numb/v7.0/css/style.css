@@ -99,6 +99,7 @@ li
 
     #btn-mobile
     {
+        color: white;
         display: flex;
         padding: 0.5rem 1rem;
         font-size: 1rem;
@@ -122,6 +123,7 @@ li
         width: 25px;
         height: 2px;
         background: currentColor;
+        margin-top: 5px;
         transition: 0.3s;
         position: relative;
     }
