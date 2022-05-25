@@ -64,6 +64,85 @@ li
 }
 /* carousel */
 
+@media (max-width: 600px)
+{
+    #menu
+    {
+        display: block;
+        position:absolute;
+        width: 15rem;
+        top: 70px;
+        right: 0px;
+        background: white;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        padding-left: 5px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #menu li
+    {
+        padding-top: 30pxS;
+        padding-bottom: 0px;
+        margin: 0 1rem;
+        border-bottom: 2px solid white;
+    }
+
+    #nav.active #menu
+    {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: hidden;
+    }
+
+    #btn-mobile
+    {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+
+    #hamburguer
+    {
+        border-top: 2px solid;
+        width: 25px;
+    }
+
+    #hamburguer::after,
+    #hamburguer::before
+    {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: currentColor;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer
+    {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before
+    {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after
+    {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
 /* banner */
 .section-banner-home
 {
@@ -205,18 +284,20 @@ li
 /* footer */
 .rodape
 {
-    padding: 50p 50px 0;
+    padding: 50px 50px 0;
+    background-color: black;
 }
 
 .rodape .info-contato p
 {
     margin: 0px;
+    color: white;
 }
 
 .rodape a
 {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 13px;
 }
 
@@ -240,5 +321,6 @@ li
 {
     text-align: center;
     margin-top: 40px;
+    color: white;
 }
 /* footer */
