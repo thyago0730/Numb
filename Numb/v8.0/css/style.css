@@ -22,11 +22,10 @@ ul
 li
 {
     color: white;
-    display: inline;
     margin: 0 10px;
 }
 
-#header img /* logo */
+#logo img /* logo */
 {
     font-size: 1.5rem;
     width: 12%;
@@ -69,7 +68,7 @@ li
     #menu
     {
         display: block;
-        position:absolute;
+        position: absolute;
         width: 15rem;
         top: 70px;
         right: 0px;
@@ -82,10 +81,20 @@ li
         overflow-y: hidden;
     }
 
+    #menu a
+    {
+        color: black;
+    }
+
+    #menu i
+    {
+        color: black;
+    }
+
     #menu li
     {
-        padding-top: 30pxS;
-        padding-bottom: 0px;
+        padding-top: 30px;
+        padding-bottom: 0;
         margin: 0 1rem;
         border-bottom: 2px solid white;
     }
@@ -99,7 +108,6 @@ li
 
     #btn-mobile
     {
-        color: white;
         display: flex;
         padding: 0.5rem 1rem;
         font-size: 1rem;
@@ -109,14 +117,15 @@ li
         gap: 0.5rem;
     }
 
-    #hamburguer
+    #hamburger
     {
         border-top: 2px solid;
+        color: white;
         width: 25px;
     }
 
-    #hamburguer::after,
-    #hamburguer::before
+    #hamburger::after,
+    #hamburger::before
     {
         content: '';
         display: block;
@@ -124,21 +133,21 @@ li
         height: 2px;
         background: currentColor;
         margin-top: 5px;
-        transition: 0.3s;
+        transition: 0.5s;
         position: relative;
     }
 
-    #nav.active #hamburguer
+    #nav.active #hamburger
     {
         border-top-color: transparent;
     }
 
-    #nav.active #hamburguer::before
+    #nav.active #hamburger::before
     {
         transform: rotate(135deg);
     }
 
-    #nav.active #hamburguer::after
+    #nav.active #hamburger::after
     {
         transform: rotate(-135deg);
         top: -7px;
@@ -151,7 +160,7 @@ li
     width: 100%;
     height: 500px;
     padding: 50px;
-    background-color: rgb(46, 46, 46);
+    background-color: black;
     color: white;
 }
 
@@ -228,6 +237,20 @@ li
 /* destaque */
 
 /* novidades */
+.novidades
+{
+    width: 100%;
+    height: 600px;
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+
+.novidades img
+{
+    height: 500px;
+}
+
 .novidades .text-body
 {
     width: 80%;
@@ -236,19 +259,19 @@ li
 
 .novidades h2
 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 26px;
     width: 70%;
 }
 
 .novidades p
 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .novidades a
 {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: underline;
     text-decoration-color: red;
     padding: 6px 12px;
