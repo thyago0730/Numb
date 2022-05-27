@@ -151,8 +151,13 @@ li
         transform: rotate(-135deg);
         top: -7px;
     }
-}
 
+    #novidades-mobile
+    {
+        height: 900px;
+    }
+
+}
 /* banner */
 .section-banner-home
 {
@@ -247,8 +252,7 @@ li
 /* novidades */
 .novidades
 {
-    width: 100%;
-    height: 600px;
+    height: 500px;
     padding: 50px;
     background-color: black;
     color: white;
@@ -256,7 +260,7 @@ li
 
 .novidades img
 {
-    height: 500px;
+    height: 400px;
 }
 
 .novidades .text-body
