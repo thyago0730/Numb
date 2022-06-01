@@ -1,0 +1,21 @@
+function mostrarMenu()
+{
+    var menu = document.getElementById("menu-header")
+    var icone = document.getElementById("icone-menu")
+
+    if (getComputedStyle(menu).display == 'none')
+    {
+        menu.style.display = 'flex'
+        icone.classList.remove(fa-bars)
+        icone.classList.remove(fa-times)
+        //mudar para Times
+    }
+
+    else
+    {
+        menu.style.display = "none"
+        icone.classList.remove(fa-bars)
+        icone.classList.remove(fa-times)
+        //mudar para Bars
+    }
+}
