@@ -19,6 +19,19 @@ body
     margin: 0 auto;
 }
 
+.whatsapp
+{
+    position: fixed;
+    z-index: 2;
+    bottom: 25px;
+    right: 25px;
+}
+
+.whatsapp img
+{
+    width: 45px;
+}
+
 header
 {
     background-color: #F9003D;
